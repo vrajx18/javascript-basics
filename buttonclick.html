@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="clik" onclick="XYZ()"> click me !!</button>
+    <br><br>
+    <input type="text" id="inp1">
+    <br><br>
+    <input type="text" id="inp2">
+    <br><br>
+    <button id="res" onclick="ADD()"> enter here to submit</button>
+    <script>
+        function XYZ(){
+            let  c = document.getElementById("clik")
+            c.innerHTML ="clicked!!"
+        }
+        function ADD(){
+        let num1 = Number(document.getElementById("inp1").value)
+        let num2 = Number(document.getElementById("inp2").value)
+        let result = (num1 +num2)
+        alert(result)
+        }
+    </script>
+</body>
+</html>
