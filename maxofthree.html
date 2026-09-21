@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <h1>FIND MAX OF THREE </h1><br><br><br><br>
+    <label for="num1">Enter the value of number 1 : </label>
+    <input type="text" id="inp1"><br> <br>
+    <label for="num2">Enter the value of number 2 : </label>
+    <input type="text" id="inp2"><br> <br>
+    <label for="num3">Enter the value of number 3 : </label>
+    <input type="text" id="inp3"><br> <br>
+    <br>
+    <button id="res" onclick="MAX()">PRESS for ANSWER</button>
+    <br><br><br>
+    <hr>
+    <script>
+        function MAX(){
+            let num1 = Number(document.getElementById("inp1").value)
+            let num2 = Number(document.getElementById("inp2").value)
+            let num3 = Number(document.getElementById("inp3").value)
+
+            if(num1 > num2 && num1 > num3){
+                alert(`${num1} is gretest from all !!`)
+            }
+            else if(num2 > num1 && num2 > num3) {
+               alert(`${num2} is gretest from all !!`)
+            }
+            else {
+                alert(`${num3} is gretest from all !!`)
+            }
+        }
+    </script>
+</body>
+</html>
