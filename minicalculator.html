@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(169, 139, 197);">
+    <center>
+    <h1>MINI CALCULATOR</h1><br><br>
+    <h2>Enter a First Element : </h2>
+    <input type="text" id="inp1" style="height: 35px; width:250px; border-color: blue;">
+    <br> <br>
+    <h2>Enter a First Element : </h2>
+    <input type="text" id="inp2" style="height: 35px; width:250px; border-color: blue;">
+    <br> <br>
+    <h1>Enter Your Choice Here :</h1><br><br>
+    <select name="sign" id="work" style="height: 45px; width:250px;
+    border: 2px solid blue;font-size: 20px;  >
+        
+        <option value="-"> - (addition)</option>
+        <option value="/"> / (division)</option>
+        <option value="*"> *(multiplication)</option>
+        <option value="-"> - (minus)</option>
+        <option value="+"> + (aadition)</option>
+    </select>
+    <br>
+    <br>
+    <button onclick="CALCULATOR()" style="height: 35px;width: 250px;
+    color: black; font-size: 25px; border-color: blue;">submit for answer</button>
+</center>
+<script>
+      function CALCULATOR(){
+        const num1 = Number(document.getElementById("inp1").value)
+        const num2 = Number(document.getElementById("inp2").value)
+        let choice = document.getElementById("work").value
+        if(choice == "-"){
+            alert(`minus is ${ num1 - num2 }`)
+        }
+        else if(choice == "+"){
+            alert(`addition is ${ num1 + num2 }`)
+        }
+        else if(choice == "/"){
+            alert(`division is ${ num1 / num2 }`)
+        }
+        else if(choice == "*"){
+            alert(`multiplication is ${ num1 * num2 }`)
+        }
+      }
+</script>
+</body>
+</html>
